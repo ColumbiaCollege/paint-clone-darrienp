@@ -10,6 +10,8 @@
 
 //Pat on the back for marking your up/down buttons in a nice way.
 
+//Paint Clone Darrien P
+
 color cursorcolor = 0;
 int green = 0;
 int step = 10;
