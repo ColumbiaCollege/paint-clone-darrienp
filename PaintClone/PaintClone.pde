@@ -40,7 +40,7 @@ void draw() {
   if (mousePressed && mouseX>50 && mouseX<100 && mouseY<50 && mouseY>0){
      green = green -step;
   }
-  cursorcolor = color(0,green,0);
+  //cursorcolor = color(0,green,0);
   //more red button
   fill(red,0,0);
   rect(0,50,50,50);
@@ -66,7 +66,7 @@ void draw() {
   if (mousePressed && mouseX>51 && mouseX<100 && mouseY>101){
     blue = blue -step;
   }
-  cursorcolor = color(0,0,blue);
+  cursorcolor = color(red,green,blue);
   
   
   //drawing part
