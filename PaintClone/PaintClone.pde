@@ -37,7 +37,7 @@ void draw() {
   //less green button
   fill(0,green,0);
   rect(50,0,50,50);
-  if (mousePressed && mouseX>50 && mouseX<100 && mouseY<50){
+  if (mousePressed && mouseX>50 && mouseX<100 && mouseY<50 && mouseY>0){
      green = green -step;
   }
   cursorcolor = color(0,green,0);
@@ -50,11 +50,23 @@ void draw() {
   //less red button
   fill(red,0,0);
   rect(50,50,50,50);
-  if (mousePressed && mouseX>51 && mouseX<100 && mouseY<100){
+  if (mousePressed && mouseX>51 && mouseX<100 && mouseY<100 && mouseY>50){
     red = red -step;
   }
   cursorcolor = color(red,0,0); 
   //more blue button
+  fill(0,0,blue);
+  rect(0,100,50,50);
+  if (mousePressed && mouseX<50 && mouseY<150 && mouseY>100){
+    blue = blue +step;
+  }
+  //less blue botton
+  fill(0,0,blue);
+  rect(50,100,50,50);
+  if (mousePressed && mouseX>51 && mouseX<100 && mouseY>101){
+    blue = blue -step;
+  }
+  cursorcolor = color(0,0,blue);
   
   
   //drawing part
